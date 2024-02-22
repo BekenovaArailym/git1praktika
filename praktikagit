@@ -1,0 +1,11 @@
+from PIL import Image, ImageFilter
+
+# нужно загрузит изображения по распложению в компьютере
+img = Image.open("D:/Images/flowers.jpg")
+
+# теперь надо фильтер из библиотеки
+img2 = img.filter(ImageFilter.EMBOSS)
+
+# И смотрим результат
+img2.show()
+
